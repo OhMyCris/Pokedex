@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="pokedex.js" defer></script>
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet" />
+</head>
+
+<body onload = "sacarLista()" >
+    
+    
+    <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="./img/Rotom_Phone_Back.png" alt="RotomBack">
+          </div>
+          <div class="flip-card-back">
+            <img src="./img/Rotom_Phone_Front.png" alt="RotomFront">
+            <div class="container">
+                <h1>Pokedex</h1>
+                <input type="text" id="buscador" onkeyup="meCagoEnLosPokes()">
+                <button id="boton" onclick="meCagoEnLosPokes()">Buscar</button>
+                <ol id="pokedex"></ol>
+                <div id="scroll">
+                  <ul id="list">
+                  </ul>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+
+</body>
+
+</html>
